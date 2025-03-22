@@ -1,0 +1,472 @@
+* {
+      margin-bottom: 500px;
+}
+body {
+  background-color: #fbf8cc;
+}
+.logo {
+  width: 114px;
+  height: 36px;
+  position: absolute;
+  top: 34px;
+  left: 97px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+
+.nav1 {
+  width: 54px;
+  height: 27px;
+  top: 37px;
+  left: 582px;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.nav2 {
+  width: 54px;
+  height: 27px;
+  top: 37px;
+  left: 697px;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.nav3 {
+  width: 46px;
+  height: 27px;
+  top: 37px;
+  left: 812px;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.social1 {
+  position: absolute;
+  width: 26px;
+  height: 15.05px;
+  top: 42px;
+  left: 1201px;
+  gap: 0px;
+  opacity: 0px;
+}
+.social2 {
+  width: 26px;
+  height: 16.1px;
+  top: 42px;
+  left: 1256px;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
+}
+.social3 {
+  width: 26px;
+  height: 17.79px;
+  top: 41px;
+  left: 1311px;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
+}
+.body1 {
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  top: 100px;
+}
+.name {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  color: #03045e;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.web {
+  position: absolute;
+  top: 180px;
+  left: 100px;
+  font-family: Poppins;
+  width: 50px;
+  line-height: 50px;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 116px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.developer {
+  position: absolute;
+  top: 270px;
+  left: 100px;
+  font-family: Poppins;
+  width: 50px;
+  line-height: 50px;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 116px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.location {
+  position: absolute;
+  top: 380px;
+  left: 100px;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.btn {
+  position: absolute;
+  top: 450px;
+  height: 40px;
+  font-size: 15px;
+  width: 100px;
+  left: 180px;
+  background-color: #f5ee84;
+  border-radius: 7px;
+}
+.photo {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  border-radius: 500px;
+  border: 2px solid #03045e;
+}
+.desgin {
+  position: absolute;
+  top: 400px;
+  right: 530px;
+}
+.body2 {
+  position: absolute;
+  top: 800px;
+}
+.about {
+  font-family: Poppins;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 116px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  position: absolute;
+  color: #f7f197;
+  left: 100px;
+}
+.text {
+  position: absolute;
+  width: 720px;
+  height: 132px;
+  top: 150px;
+  left: 100px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.one {
+  position: absolute;
+  top: 400px;
+  width: 750px;
+  height: 182px;
+  left: 384px;
+}
+.point {
+  position: absolute;
+  top: 12px;
+}
+.year {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.onetext {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.two {
+  position: absolute;
+  top: 650px;
+  width: 750px;
+  height: 182px;
+  left: 384px;
+}
+.three {
+  position: absolute;
+  top: 900px;
+  width: 750px;
+  height: 182px;
+  left: 384px;
+}
+.body3 {
+  position: absolute;
+  top: 2000px;
+}
+.work {
+  position: absolute;
+  width: 292px;
+  height: 116px;
+  left: 97px;
+  gap: 0px;
+  opacity: 0px;
+
+  font-family: Poppins;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 116px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #f7f197;
+}
+.worktext {
+  position: absolute;
+  width: 720px;
+  height: 132px;
+  top: 150px;
+  left: 97px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+
+.work1 {
+  position: absolute;
+  top: 5px;
+  height: 500px;
+  top: 380px;
+  left: 97px;
+  width: 560px;
+}
+.work1img {
+  position: absolute;
+  width: 560px;
+  height: 400px;
+  top: 0px;
+  left: 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+.work1text {
+  position: absolute;
+  top: 390px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.work1text2 {
+  position: absolute;
+  top: 430px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.work1text3 {
+  position: absolute;
+  top: 480px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+  width: 560px;
+  height: 96px;
+
+  gap: 0px;
+  opacity: 0px;
+}
+.work2 {
+  position: absolute;
+  top: 5px;
+  height: 500px;
+  top: 380px;
+  left: 880px;
+  width: 560px;
+}
+.body4 {
+  position: absolute;
+  top: 3050px;
+}
+.contact {
+  position: absolute;
+  top: 5px;
+  left: 97px;
+  font-family: Poppins;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 116px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #f7f197;
+}
+.contactimg {
+  position: absolute;
+  width: 440px;
+  height: 314px;
+  top: 200px;
+  left: 97px;
+  gap: 0px;
+  opacity: 0px;
+}
+.contacttext1 {
+  position: absolute;
+  width: 640px;
+  height: 176px;
+  top: 200px;
+  left: 596px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.contacttext2 {
+  position: absolute;
+  width: 236px;
+  height: 44px;
+  top: 420px;
+  left: 596px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03045e;
+}
+.contacttext3 {
+    position: absolute;
+  width: 246px;
+  height: 44px;
+  top: 450px;
+  left: 596px;
+  color: #03045e;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.contacttext4{
+    position: absolute;
+    width: 278px;
+height: 44px;
+top: 480px;
+left: 596px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 44px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #03045E;
+
+}
