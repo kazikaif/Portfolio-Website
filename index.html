@@ -1,106 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaif's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <body>
-    <header>
-      <div class="logo">John Doe</div>
-      <div class="nav">
-        <span class="nav1" onclick="about">Home</span>
-        <span class="nav2">About</span>
-        <span class="nav3">Work</span>
+</head>
+<body>
+  <header class="head">
+    <div class="logo">Portfolio</div>
+    <nav class="cat">
+      <span>Home</span>
+      <span>About</span>
+      <span>Experience</span>
+      <span>Projects</span>
+      <span>Contact</span>
+    </nav>
+  </header>
+
+  <main>
+    <div class="div">
+      <div class="div1">
+        <section class="name">Hello, I'm</section>
+        <section class="name name2">Mohammad Kaif</section>
+        <button class="resume">Resume</button>
       </div>
-      <div class="social">
-        <img class="social1" src="./Images/Vector (11).png" alt="" />
-        <img class="social2" src="./Images/Vector (12).png" alt="" />
-        <img class="social3" src="./Images/Vector (13).png" alt="" />
+      <div class="div2">
+        <img class="photo" src="./Images/kaif.png" alt="Kaif's photo" />
       </div>
-    </header>
-    <main>
-      <div class="body1">
-        <div>
-          <section class="name">Hello ,I'm Mohammad Kaif,</section>
-          <span class="web">Web </span>
-          <span class="developer">Developer</span>
-          <section class="location">Based in Vadodara, Gujarat</section>
-          <button class="btn">Resume</button>
-        </div>
-        <div>
-          <img class="photo" src="./Images/kaif.png" alt="" />
-          <img class="desgin" src="./Images/Group 6.png" alt="" />
-        </div>
+    </div>
+
+    <div class="about">
+      <section class="ab">About Me</section>
+      <div class="about1">
+        <section class="info">
+          I'm a final-year BSc-IT student from Parul University, specialized in Full Stack Web Development. I’m learning and building web applications to kickstart my career. With a strong foundation in MERN Stack, I’m eager to create intensive and impactful websites.
+        </section>
       </div>
-      <div class="body2" id="about">
-        <section class="about">about.</section>
-        <section class="text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-          vulputate tristique quam felis. Id phasellus dui orci vulputate
-          consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+    </div>
+
+    <div class="education">
+      <section class="edu">Education</section>
+      <div class="detail">
+        <section class="in">Bachelor's Degree</section>
+        <span class="det">Parul University</span>
+        <span class="year1">2022-2025</span>
+
+        <section class="in">HSC</section>
+        <span class="det">Baroda High School, Alkapuri</span>
+        <span class="year2">2022</span>
+
+        <section class="in">SSC</section>
+        <span class="det">Vithal Vidhyalaya</span>
+        <span class="year3">2020</span>
+      </div>
+    </div>
+
+    <div class="experience">
+      <section class="exp">Internships</section>
+      <section class="accio">AccioJob</section>
+      <div id="det">
+        <span class="acciodet">
+          I completed a 6-month internship as a Software Developer Intern focused on Front-End Web Development. I gained hands-on experience in HTML, CSS, JavaScript, and React.js, worked with APIs, and built several projects.
+        </span>
+      </div>
+    </div>
+
+    <div class="projects">
+      <section class="pro">Projects</section>
+      <div class="pros">
+        <section class="project1" id="project">
+          <a href="https://portfolio-website-kappa-beige.vercel.app/" target="_blank">
+            <img id="im" src="./Images/Portfolio-Website.png" alt="Portfolio Screenshot" />
+            <button class="Portfolio">Portfolio</button>
+          </a>
         </section>
 
-        <div class="one">
-          <img class="point" src="./Images/Ellipse 1.png" alt="" />
-          <span class="year">2014-2018</span>
-          <section class="onetext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-            vulputate tristique quam felis. Id phasellus dui orci vulputate
-            consequat nulla proin. Id sit scelerisque neque, proin bibendum
-            diam.
-          </section>
-        </div>
-        <div class="two">
-          <img class="point" src="./Images/Ellipse 1.png" alt="" />
-          <span class="year">2014-2018</span>
-          <section class="onetext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-            vulputate tristique quam felis. Id phasellus dui orci vulputate
-            consequat nulla proin. Id sit scelerisque neque, proin bibendum
-            diam.
-          </section>
-        </div>
-        <div class="three">
-          <img class="point" src="./Images/Ellipse 1.png" alt="" />
-          <span class="year">2014-2018</span>
-          <section class="onetext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-            vulputate tristique quam felis. Id phasellus dui orci vulputate
-            consequat nulla proin. Id sit scelerisque neque, proin bibendum
-            diam.
-          </section>
-        </div>
+        <section class="project2" id="project">
+          <a href="https://bitcoin-chart-black.vercel.app/" target="_blank">
+            <img id="im" src="./Images/Bitcoin-Website.png" alt="Bitcoin Chart Screenshot" />
+            <button class="Portfolio">Bitcoin Chart</button>
+          </a>
+        </section>
+
+        <section class="project3" id="project">
+          <a href="https://atm-website-pied.vercel.app/" target="_blank">
+            <img id="im" src="./Images/ATM-Website.png" alt="ATM Website Screenshot" />
+            <button class="Portfolio">ATM Website</button>
+          </a>
+        </section>
       </div>
+    </div>
 
-      <div class="body3">
-        <section class="work">work.</section>
-        <div class="worktext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.</div>
+    <div class="Contact">
+      <section class="contact">Contact</section>
+      <div class="con">
+        <span class="ph">Phone:</span>
+        <span class="no">7984-2929-07</span><br />
+        <span class="ph">Email:</span>
+        <span class="no">kaifkazi83@gmail.com</span>
+      </div>
+      <div class="link">
+        <a href="https://www.linkedin.com/in/kazi-mohammad-kaif-57b11423b/">
+          <img class="linkedin" src="./Images/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/kazikaif">
+          <img class="linkedin" src="./Images/github.png" alt="GitHub" />
+        </a>
+        <a href="https://www.instagram.com/kaif_x29/">
+          <img class="linkedin" src="./Images/insta.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+  </main>
 
-        <div class="work1"> 
-            <img class="work1img" src="./Images/Ellipse 1.png" alt="">
-            <section class="work1text">November 24, 2019</section>
-            <section class="work1text2">Some Case Study</section>
-            <section class="work1text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin rhoncus morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc, consequat, at.</section>
-        </div>
-        <div class="work2"> 
-            <img class="work1img" src="./Images/Vector (11).png" alt="">
-            <section class="work1text">November 24, 2019</section>
-            <section class="work1text2">Some Case Study</section>
-            <section class="work1text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin rhoncus morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc, consequat, at.</section>
-        </div>   
-       </div>
-       <div class="body4">
-        <section class="contact">contact.</section>
-        <div><img class="contactimg" src="./Images/Vector (12).png" alt=""></div>
-        <div>
-            <section class="contacttext1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.</section>
-            <section class="contacttext2">johndoe@mail.com</section>
-            <section class="contacttext3">twitter.com/johndoe</section>
-            <section class="contacttext4">behance.com/johndoe</section>
-        </div>
-       </div>
-    </main>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
