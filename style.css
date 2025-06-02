@@ -11,24 +11,40 @@ body {
 .head {
   background-color: #9805e2;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: auto;
   flex-wrap: wrap;
+  padding: 10px 20px;
 }
 
 .logo {
   font-size: 30px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 1025px) {
+  .logo {
+    padding-left: 150px;
+  }
 }
 
 .cat {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
+  padding-right: 25px;
 }
 
-/* Resume button */
-.resume {
+.cat a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+ .resume {
   font-size: 20px;
   padding: 10px;
   background-color: rgb(42, 8, 234);
@@ -38,8 +54,14 @@ body {
   color: white;
   width: 120px;
   height: 50px;
-  margin-top: 30px;
-  margin-left: 120px;
+  margin: 30px auto;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .resume {
+    margin-left: 120px;
+  }
 }
 
 /* Main div with two sections */
@@ -50,10 +72,12 @@ body {
   gap: 200px;
   height: 700px;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .div1 {
-  margin-right: 100px;
+  margin: 0;
+  text-align: center;
 }
 
 .name {
@@ -76,13 +100,13 @@ body {
   border-radius: 50%;
 }
 
- .about,
+.about,
 .education,
 .internship,
 .projects,
 .Contact {
   padding: 40px 20px;
- }
+}
 
 .ab,
 .edu,
@@ -93,14 +117,17 @@ body {
   color: rgb(16, 77, 161);
   text-align: center;
   margin-bottom: 20px;
- }
- 
-.info {
+}
+
+.info,
+.acciodet {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
   font-size: 20px;
-  }
+  padding: 0 10px;
+  word-wrap: break-word;
+}
 
 .detail {
   max-width: 800px;
@@ -133,24 +160,17 @@ body {
   color: white;
 }
 
-
 #det {
   max-width: 800px;
   margin: 10px auto;
 }
-.acciodet{
-  font-size: 16px;
-  margin-top: 20px;
-  margin-left: 20px;
- }
 
- .pros {
+.pros {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 0 20px;
 }
-
 
 #project {
   background-color: #222;
@@ -168,12 +188,13 @@ body {
 
 #im {
   width: 100%;
-  height: 200px;
-  object-fit: fill;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
   border: 1px solid gray;
 }
 
- .Portfolio {
+.Portfolio {
   width: 100%;
   margin-top: 10px;
   padding: 10px;
@@ -184,7 +205,7 @@ body {
   cursor: pointer;
 }
 
- .con {
+.con {
   text-align: center;
   font-size: 18px;
   margin-top: 20px;
@@ -205,6 +226,7 @@ body {
   gap: 20px;
   margin-top: 30px;
   flex-wrap: wrap;
+  padding: 0 10px;
 }
 
 .linkedin {
@@ -212,33 +234,12 @@ body {
 }
 
  
-@media screen and (max-width: 767px) {
-  .head {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-    padding: 10px;
-  }
-
-  .cat {
-    flex-direction: column;
-    gap: 10px;
-  }
-
+ @media screen and (max-width: 767px) {
   .div {
     flex-direction: column;
     gap: 40px;
     height: auto;
     padding: 20px;
-  }
-
-  .div1 {
-    margin: 0;
-    text-align: center;
-  }
-
-  .resume {
-    margin: 20px auto;
   }
 
   .photo {
@@ -257,6 +258,12 @@ body {
   .pros {
     grid-template-columns: 1fr;
     padding: 0 10px;
+  }
+
+  .cat {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
 
@@ -279,6 +286,35 @@ body {
   .name2 {
     font-size: 50px;
   }
+
+  .pros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+ @media screen and (min-width: 1025px) and (max-width: 1199px) {
+  .div {
+    flex-direction: row;
+    gap: 150px;
+    padding: 40px;
+  }
+
+  .photo {
+    width: 400px;
+    height: 400px;
+  }
+
+  .name {
+    font-size: 45px;
+  }
+
+  .name2 {
+    font-size: 55px;
+  }
+
+  .pros {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
  @media screen and (min-width: 1200px) {
@@ -290,5 +326,9 @@ body {
   .photo {
     width: 550px;
     height: 550px;
+  }
+
+  .pros {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
