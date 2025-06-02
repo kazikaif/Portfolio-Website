@@ -8,34 +8,38 @@ body {
 }
 
 /* Header */
+/* Header */
 .head {
   background-color: #9805e2;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: auto;
   flex-wrap: wrap;
   padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box; /* make sure padding included in width */
 }
 
+/* Logo */
 .logo {
   font-size: 30px;
   padding-left: 20px;
+  flex: 1 1 auto; /* allow it to shrink and grow */
+  min-width: 150px;
 }
 
-@media screen and (min-width: 1025px) {
-  .logo {
-    padding-left: 150px;
-  }
-}
-
+/* Category / nav links */
 .cat {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   padding-right: 25px;
+  flex: 2 1 auto;
+  justify-content: flex-end;
+  min-width: 150px;
 }
 
+/* Links inside cat */
 .cat a {
   text-decoration: none;
   color: inherit;
@@ -44,7 +48,8 @@ body {
   padding: 5px 10px;
 }
 
- .resume {
+/* Resume button */
+.resume {
   font-size: 20px;
   padding: 10px;
   background-color: rgb(42, 8, 234);
@@ -54,15 +59,83 @@ body {
   color: white;
   width: 120px;
   height: 50px;
-  margin: 30px auto;
-  display: block;
+  margin-left: 20px;
+  white-space: nowrap;
 }
 
-@media screen and (min-width: 768px) {
+/* Responsive adjustments */
+
+/* Small screens (mobile) */
+@media screen and (max-width: 767px) {
+  .head {
+    justify-content: center;
+    padding: 15px 10px;
+  }
+
+  .logo {
+    padding-left: 0;
+    font-size: 24px;
+    text-align: center;
+    flex-basis: 100%;
+    min-width: auto;
+  }
+
+  .cat {
+    justify-content: center;
+    padding-right: 0;
+    flex-basis: 100%;
+    gap: 15px;
+  }
+
   .resume {
-    margin-left: 120px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
   }
 }
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .head {
+    padding: 10px 30px;
+  }
+
+  .logo {
+    font-size: 28px;
+    padding-left: 30px;
+    flex-basis: auto;
+  }
+
+  .cat {
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+
+  .resume {
+    margin-left: 15px;
+  }
+}
+
+/* Laptops & Desktops */
+@media screen and (min-width: 1025px) {
+  .head {
+    padding: 10px 150px;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .cat {
+    padding-right: 0;
+  }
+
+  .resume {
+    margin-left: 20px;
+  }
+}
+
 
 /* Main div with two sections */
 .div {
