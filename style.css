@@ -60,6 +60,13 @@ body {
   height: 50px;
   margin-left: 20px;
   white-space: nowrap;
+    transition: transform 0.3s ease;
+
+}
+.resume:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+
 }
 
  
