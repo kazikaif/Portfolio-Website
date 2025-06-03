@@ -1,4 +1,9 @@
 /* Global styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -37,7 +42,7 @@ body {
   flex: 2 1 auto;
   justify-content: flex-end;
   min-width: 150px;
-}
+ }
 
 /* Links inside cat */
 .cat a {
@@ -46,7 +51,7 @@ body {
   font-size: 18px;
   cursor: pointer;
   padding: 5px 10px;
-}
+  }
 
 /* Resume button */
 .resume {
@@ -181,6 +186,10 @@ body {
   padding: 40px 20px;
 }
 
+.about{
+height: 280px;
+}
+
 .ab,
 .edu,
 .exp,
@@ -200,6 +209,11 @@ body {
   font-size: 20px;
   padding: 0 10px;
   word-wrap: break-word;
+  margin-top: 50px;
+}
+.acciodet{
+  margin-top: 8px;
+  color: rgb(192, 189, 189);
 }
 
 .detail {
@@ -214,16 +228,34 @@ body {
 }
 
 .det {
-  display: block;
+  display: flex;
   margin-left: 20px;
+  color: rgb(192, 189, 189);
+
 }
 
 .year1,
 .year2,
 .year3 {
-  display: block;
+  display: flex;
   margin-left: 20px;
   font-size: 16px;
+  color: rgb(192, 189, 189);
+
+}
+.det {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+  font-size: 20px;
+  color: rgb(192, 189, 189);
+}
+
+.det .year {
+  font-size: 16px;
+  color: #aaa;
+  margin-left: auto;
 }
 
 .accio {
@@ -231,6 +263,7 @@ body {
   font-style: bold;
   margin-top: 20px;
   color: white;
+   
 }
 
 #det {
