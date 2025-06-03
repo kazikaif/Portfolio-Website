@@ -1,5 +1,4 @@
 /* Global styles */
-
 html {
   scroll-behavior: smooth;
 }
@@ -13,7 +12,6 @@ body {
 }
 
 /* Header */
-/* Header */
 .head {
   background-color: #9805e2;
   display: flex;
@@ -22,18 +20,17 @@ body {
   flex-wrap: wrap;
   padding: 10px 20px;
   width: 100%;
-  box-sizing: border-box; /* make sure padding included in width */
+  box-sizing: border-box;
 }
 
-/* Logo */
 .logo {
   font-size: 40px;
   padding-left: 20px;
-  flex: 1 1 auto; /* allow it to shrink and grow */
+  flex: 1 1 auto;
   min-width: 150px;
+  font-weight: bold;
 }
 
-/* Category / nav links */
 .cat {
   display: flex;
   gap: 10px;
@@ -42,16 +39,20 @@ body {
   flex: 2 1 auto;
   justify-content: flex-end;
   min-width: 150px;
- }
+}
 
-/* Links inside cat */
 .cat a {
   text-decoration: none;
   color: inherit;
   font-size: 18px;
   cursor: pointer;
   padding: 5px 10px;
-  }
+  transition: color 0.3s;
+}
+
+.cat a:hover {
+  color: #60056e;
+}
 
 /* Resume button */
 .resume {
@@ -66,81 +67,16 @@ body {
   height: 50px;
   margin-left: 20px;
   white-space: nowrap;
+  margin-top: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
-/* Responsive adjustments */
+.resume:hover {
+  background-color: #6a29f1;
+      transform: scale(1.15);
 
-/* Small screens (mobile) */
-@media screen and (max-width: 767px) {
-  .head {
-    justify-content: center;
-    padding: 15px 10px;
-  }
-
-  .logo {
-    padding-left: 0;
-    font-size: 24px;
-    text-align: center;
-    flex-basis: 100%;
-    min-width: auto;
-  }
-
-  .cat {
-    justify-content: center;
-    padding-right: 0;
-    flex-basis: 100%;
-    gap: 15px;
-  }
-
-  .resume {
-    margin-left: 0;
-    width: 100%;
-    max-width: 200px;
-    margin-top: 10px;
-  }
 }
-
-/* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .head {
-    padding: 10px 30px;
-  }
-
-  .logo {
-    font-size: 28px;
-    padding-left: 30px;
-    flex-basis: auto;
-  }
-
-  .cat {
-    justify-content: flex-end;
-    padding-right: 30px;
-  }
-
-  .resume {
-    margin-left: 15px;
-  }
-}
-
-/* Laptops & Desktops */
-@media screen and (min-width: 1025px) {
-  .head {
-    padding: 10px 150px;
-  }
-
-  .logo {
-    padding-left: 0;
-  }
-
-  .cat {
-    padding-right: 0;
-  }
-
-  .resume {
-    margin-left: 20px;
-  }
-}
-
 
 /* Main div with two sections */
 .div {
@@ -176,8 +112,9 @@ body {
   height: 500px;
   width: 500px;
   border-radius: 50%;
-}
+ }
 
+/* Section containers */
 .about,
 .education,
 .internship,
@@ -185,13 +122,16 @@ body {
 .Contact {
   padding: 40px 20px;
 }
-.Contact{
+
+.Contact {
   height: 300px;
 }
-.about{
-height: 280px;
+
+.about {
+  height: 280px;
 }
 
+/* Section titles */
 .ab,
 .edu,
 .exp,
@@ -203,6 +143,7 @@ height: 280px;
   margin-bottom: 20px;
 }
 
+/* Text content */
 .info,
 .acciodet {
   max-width: 800px;
@@ -213,11 +154,13 @@ height: 280px;
   word-wrap: break-word;
   margin-top: 50px;
 }
-.acciodet{
+
+.acciodet {
   margin-top: 8px;
   color: rgb(192, 189, 189);
 }
 
+/* Education details */
 .detail {
   max-width: 800px;
   margin: 0 auto;
@@ -229,22 +172,6 @@ height: 280px;
   color: white;
 }
 
-.det {
-  display: flex;
-  margin-left: 20px;
-  color: rgb(192, 189, 189);
-
-}
-
-.year1,
-.year2,
-.year3 {
-  display: flex;
-  margin-left: 20px;
-  font-size: 16px;
-  color: rgb(192, 189, 189);
-
-}
 .det {
   display: flex;
   justify-content: space-between;
@@ -260,19 +187,21 @@ height: 280px;
   margin-left: auto;
 }
 
+/* Internship company name */
 .accio {
   font-size: 35px;
-  font-style: bold;
+  font-weight: bold;
   margin-top: 20px;
   color: white;
-   
 }
 
+/* Internship container */
 #det {
   max-width: 800px;
   margin: 10px auto;
 }
 
+/* Projects grid */
 .pros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -280,28 +209,30 @@ height: 280px;
   padding: 0 20px;
 }
 
-#project {
+/* Each project box */
+.project {
   background-color: #222;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  transition: transform 0.3s ease;
-   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-#project:hover {
+.project:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
 }
 
-#im {
+.project img {
   width: 100%;
   height: auto;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border: 1px solid gray;
 }
 
+/* Project buttons */
 .Portfolio {
   width: 100%;
   margin-top: 10px;
@@ -311,141 +242,99 @@ height: 280px;
   color: white;
   border: 2px solid #e00bff;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
+.Portfolio:hover {
+  background-color: #e00bff;
+  color: black;
+}
+
+/* Contact section text */
 .con {
   text-align: center;
   font-size: 18px;
   margin-top: 40px;
-  
 }
 
 .ph {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
+  color: white;
 }
- 
 
 .no {
-  margin-left: 10px;
+  font-size: 20px;
+  color: #ccc;
 }
 
+/* Social media links */
 .link {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  
-  padding: 0 10px; 
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .linkedin {
-  height: 40px;
+  width: 50px;
+  cursor: pointer;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-}
-.linkedin:hover{
-  transform: scale(1.18);
 
 }
 
- 
- @media screen and (max-width: 767px) {
+.linkedin:hover {
+    transform: scale(1.15);
+
+ }
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
   .div {
     flex-direction: column;
     gap: 40px;
     height: auto;
-    padding: 20px;
-  }
-
-  .photo {
-    width: 200px;
-    height: 200px;
-  }
-
-  .name {
-    font-size: 30px;
-  }
-
-  .name2 {
-    font-size: 40px;
   }
 
   .pros {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .pros {
     grid-template-columns: 1fr;
-    padding: 0 10px;
+  }
+
+  .head {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .cat {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-}
-
- @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .div {
-    flex-direction: column;
-    gap: 50px;
-    height: auto;
+    justify-content: flex-start;
+    gap: 15px;
+    padding-right: 0;
   }
 
   .photo {
-    width: 300px;
     height: 300px;
+    width: 300px;
   }
 
   .name {
+    font-size: 35px;
+  }
+
+  .name2 {
     font-size: 40px;
   }
 
-  .name2 {
-    font-size: 50px;
-  }
-
-  .pros {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
- @media screen and (min-width: 1025px) and (max-width: 1199px) {
-  .div {
-    flex-direction: row;
-    gap: 150px;
-    padding: 40px;
-  }
-
-  .photo {
-    width: 400px;
-    height: 400px;
-  }
-
-  .name {
-    font-size: 45px;
-  }
-
-  .name2 {
-    font-size: 55px;
-  }
-
-  .pros {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
- @media screen and (min-width: 1200px) {
-  .div {
-    gap: 250px;
-    padding: 40px;
-  }
-
-  .photo {
-    width: 550px;
-    height: 550px;
-  }
-
-  .pros {
-    grid-template-columns: repeat(3, 1fr);
+  .resume {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 0;
   }
 }
