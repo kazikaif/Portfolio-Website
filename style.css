@@ -1,5 +1,4 @@
-/* Global styles */
-
+ 
 html {
   scroll-behavior: smooth;
 }
@@ -12,8 +11,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Header */
-/* Header */
+ 
 .head {
   background-color: #9805e2;
   display: flex;
@@ -22,19 +20,17 @@ body {
   flex-wrap: wrap;
   padding: 10px 20px;
   width: 100%;
-  box-sizing: border-box; /* make sure padding included in width */
+  box-sizing: border-box; 
 }
 
-/* Logo */
-.logo {
+ .logo {
   font-size: 40px;
   padding-left: 20px;
-  flex: 1 1 auto; /* allow it to shrink and grow */
+  flex: 1 1 auto;  
   min-width: 150px;
 }
 
-/* Category / nav links */
-.cat {
+ .cat {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -44,8 +40,7 @@ body {
   min-width: 150px;
  }
 
-/* Links inside cat */
-.cat a {
+ .cat a {
   text-decoration: none;
   color: inherit;
   font-size: 18px;
@@ -53,8 +48,7 @@ body {
   padding: 5px 10px;
   }
 
-/* Resume button */
-.resume {
+ .resume {
   font-size: 20px;
   padding: 10px;
   background-color: rgb(42, 8, 234);
@@ -68,10 +62,8 @@ body {
   white-space: nowrap;
 }
 
-/* Responsive adjustments */
-
-/* Small screens (mobile) */
-@media screen and (max-width: 767px) {
+ 
+ @media screen and (max-width: 767px) {
   .head {
     justify-content: center;
     padding: 15px 10px;
@@ -142,8 +134,7 @@ body {
 }
 
 
-/* Main div with two sections */
-.div {
+ .div {
   display: flex;
   justify-content: center;
   align-items: center;
