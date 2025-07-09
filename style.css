@@ -1,4 +1,3 @@
- 
 html {
   scroll-behavior: smooth;
 }
@@ -11,7 +10,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
- 
 .head {
   background-color: #9805e2;
   display: flex;
@@ -20,17 +18,17 @@ body {
   flex-wrap: wrap;
   padding: 10px 20px;
   width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
- .logo {
+.logo {
   font-size: 40px;
   padding-left: 20px;
-  flex: 1 1 auto;  
+  flex: 1 1 auto;
   min-width: 150px;
 }
 
- .cat {
+.cat {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -38,17 +36,17 @@ body {
   flex: 2 1 auto;
   justify-content: flex-end;
   min-width: 150px;
- }
+}
 
- .cat a {
+.cat a {
   text-decoration: none;
   color: inherit;
   font-size: 18px;
   cursor: pointer;
   padding: 5px 10px;
-  }
+}
 
- .resume {
+.resume {
   font-size: 20px;
   padding: 10px;
   background-color: rgb(42, 8, 234);
@@ -60,26 +58,28 @@ body {
   height: 50px;
   margin-left: 20px;
   white-space: nowrap;
-    transition: transform 0.3s ease;
-
+  transition: transform 0.3s ease;
+  margin-top: 30px;
 }
-.resume:hover{
+
+.resume:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
-
 }
+
 .skills {
-  padding: 40px 20px;
+  padding: 100px 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .skills-container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .skill {
@@ -102,19 +102,20 @@ body {
   background-color: rgb(28, 28, 28);
   transform: scale(1.07);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
- }
+}
 
-
- 
- @media screen and (max-width: 767px) {
+/* Responsive Header */
+@media screen and (max-width: 767px) {
   .head {
     justify-content: center;
     padding: 15px 10px;
   }
+  
 
   .logo {
     padding-left: 0;
-    font-size: 24px;
+    font-size: 50px;
+    margin-bottom: 10px;
     text-align: center;
     flex-basis: 100%;
     min-width: auto;
@@ -125,6 +126,8 @@ body {
     padding-right: 0;
     flex-basis: 100%;
     gap: 15px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .resume {
@@ -135,7 +138,6 @@ body {
   }
 }
 
-/* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .head {
     padding: 10px 30px;
@@ -157,7 +159,6 @@ body {
   }
 }
 
-/* Laptops & Desktops */
 @media screen and (min-width: 1025px) {
   .head {
     padding: 10px 150px;
@@ -176,20 +177,26 @@ body {
   }
 }
 
-
- .div {
+/* Home Section */
+.div {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 200px;
-  height: 700px;
-  padding: 20px;
   flex-wrap: wrap;
+  gap: 250px;
+  padding: 100px 20px;
+  box-sizing: border-box;
 }
 
 .div1 {
-  margin: 0;
   text-align: center;
+   min-height: 200px;
+}
+
+.div2 {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 300px;
 }
 
 .name {
@@ -201,33 +208,41 @@ body {
   font-weight: bold;
 }
 
-.div2 {
-  display: flex;
-  justify-content: center;
-}
-
 .photo {
-  height: 500px;
   width: 500px;
+  height: 500px;
   border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: popUp 1.8s ease-out forwards;
+  animation-delay: 0.5s;
 }
 
+/* Section Padding */
 .about,
+.skills,
 .education,
 .internship,
 .projects,
 .Contact {
-  padding: 40px 20px;
-}
-.education{
+  padding: 100px 20px;
 
+
+}
+
+/* Other Sections */
+.education {
   margin-top: 150px;
 }
-.Contact{
-  height: 250px;
+
+.about {
+  height: auto;
 }
-.about{
-height: 280px;
+
+.Contact {
+  height: 250px;
 }
 
 .ab,
@@ -235,29 +250,29 @@ height: 280px;
 .exp,
 .pro,
 .contact {
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: bolder;
   color: rgb(16, 77, 161);
   text-align: center;
   margin-bottom: 20px;
 }
 
+.pro{
+  margin-bottom: 80px;
+}
+
 .info,
 .acciodet {
   max-width: 800px;
-  margin: 0 auto;
-   font-size: 20px;
+  margin: 50px auto 0;
+  font-size: 20px;
   padding: 0 10px;
   word-wrap: break-word;
-  margin-top: 50px;
 }
-.acciodet{
+
+.acciodet {
   margin-top: 8px;
   color: rgb(192, 189, 189);
-}
-.date{
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
 }
 
 .detail {
@@ -273,9 +288,11 @@ height: 280px;
 
 .det {
   display: flex;
-  margin-left: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+  font-size: 20px;
   color: rgb(192, 189, 189);
-
 }
 
 .year1,
@@ -284,15 +301,6 @@ height: 280px;
   display: flex;
   margin-left: 20px;
   font-size: 16px;
-  color: rgb(192, 189, 189);
-
-}
-.det {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 20px;
-  font-size: 20px;
   color: rgb(192, 189, 189);
 }
 
@@ -304,10 +312,9 @@ height: 280px;
 
 .accio {
   font-size: 35px;
-  font-style: bold;
+  font-weight: bold;
   margin-top: 20px;
   color: white;
-   
 }
 
 #det {
@@ -315,6 +322,7 @@ height: 280px;
   margin: 10px auto;
 }
 
+/* Projects */
 .pros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -328,7 +336,7 @@ height: 280px;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 #project:hover {
@@ -355,18 +363,17 @@ height: 280px;
   cursor: pointer;
 }
 
+/* Contact */
 .con {
   text-align: center;
   font-size: 18px;
   margin-top: 40px;
-  
 }
 
 .ph {
   font-size: 20px;
   font-weight: bold;
 }
- 
 
 .no {
   margin-left: 10px;
@@ -378,40 +385,79 @@ height: 280px;
   gap: 20px;
   margin-top: 30px;
   flex-wrap: wrap;
-  
-  padding: 0 10px; 
+  padding: 0 10px;
 }
 
 .linkedin {
   height: 40px;
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.linkedin:hover{
+
+.linkedin:hover {
   transform: scale(1.18);
-
 }
 
- 
- @media screen and (max-width: 767px) {
+/* Animations */
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+#resume-btn {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#resume-btn.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#typing-text,
+#typing-text2 {
+  display: block;
+  min-height: 60px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
   .div {
     flex-direction: column;
+    align-items: center;
     gap: 40px;
-    height: auto;
-    padding: 20px;
+    padding: 100px 20px;
   }
+  
 
   .photo {
-    width: 200px;
-    height: 200px;
+    width: 320px;
+    height: 320px;
   }
 
   .name {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .name2 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .pros {
@@ -419,19 +465,27 @@ height: 280px;
     padding: 0 10px;
   }
 
-  .cat {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  .about,
+  .skills,
+  .education,
+  .internship,
+  .projects,
+  .Contact {
+    padding: 40px 10px;
+  }
+
+  .skills {
+    margin-top: 120px;
   }
 }
 
- @media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .div {
     flex-direction: column;
     gap: 50px;
-    height: auto;
+    padding: 100px 20px;
   }
+  
 
   .photo {
     width: 300px;
@@ -449,13 +503,17 @@ height: 280px;
   .pros {
     grid-template-columns: repeat(2, 1fr);
   }
+  .div1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+   }
 }
 
- @media screen and (min-width: 1025px) and (max-width: 1199px) {
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
   .div {
     flex-direction: row;
     gap: 150px;
-    padding: 40px;
+    padding: 100px 20px;
   }
 
   .photo {
@@ -476,10 +534,9 @@ height: 280px;
   }
 }
 
- @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .div {
     gap: 250px;
-    padding: 40px;
   }
 
   .photo {
@@ -491,3 +548,8 @@ height: 280px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
+ .skills{
+  margin: 0;
+  padding-bottom: 0;
+  }
+ 
