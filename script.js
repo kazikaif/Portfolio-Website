@@ -16,6 +16,12 @@ function typeFirst() {
 function typeSecond() {
   if (j < text2.length) {
     document.getElementById("typing-text2").innerHTML += text2.charAt(j);
+
+    // Start photo animation after 3 characters
+    if (j === 3) {
+      document.querySelector(".photo").classList.add("show-photo");
+    }
+
     j++;
     setTimeout(typeSecond, 100);
   } else {
@@ -33,7 +39,7 @@ const observer = new IntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
-        observer.unobserve(entry.target); // only animate once
+        observer.unobserve(entry.target);
       }
     });
   },
