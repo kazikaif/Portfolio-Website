@@ -312,7 +312,8 @@ body {
 
 .detail {
   max-width: 800px;
-  margin: 0 auto;
+  margin:  auto;
+  padding-top: 20px;
 }
 
 .in {
