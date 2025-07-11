@@ -39,12 +39,36 @@ body {
 }
 
 .cat a {
+  position: relative;
   text-decoration: none;
   color: inherit;
   font-size: 18px;
   cursor: pointer;
   padding: 5px 10px;
+  transition: color 0.3s ease;
 }
+
+.cat a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.cat a:hover {
+  color: #ffffff;
+}
+
+.cat a:hover::after {
+  transform: scaleX(1);
+}
+  
 
 .resume {
   font-size: 20px;
@@ -362,22 +386,22 @@ body {
 .pros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 50px;
   padding: 0 20px;
 }
 
 #project {
-  background-color: #222;
+  background-color: #333131;
   padding: 10px;
-  border-radius: 10px;
-  text-align: center;
+   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
+  width: 90%;
 }
 
 #project:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0px 20px #eab2f3;
 }
 
 #im {
